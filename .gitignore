@@ -18,6 +18,9 @@
 !.config/wpg/
 .config/wpg/*
 !.config/wpg/wpg.conf
+!.config/wallpapers/
+.config/wallpapers/*
+!.config/wallpapers/PLACEHOLDER.md
 !.config/rofi/
 !.config/ranger/
 !.config/rofi/

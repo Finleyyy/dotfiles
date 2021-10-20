@@ -112,32 +112,27 @@ alias rewall="sh $HOME/.config/polybar/$pbTheme/scripts/pywal.sh"
 alias rebar="sh $HOME/.config/polybar/$pbTheme/launch.sh"
 export barDir="$HOME/.config/polybar/$pbTheme/"
 
-PATH="/home/finley/perl5/bin${PATH:+:${PATH}}"; export PATH;
-PERL5LIB="/home/finley/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
-PERL_LOCAL_LIB_ROOT="/home/finley/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
-PERL_MB_OPT="--install_base \"/home/finley/perl5\""; export PERL_MB_OPT;
-PERL_MM_OPT="INSTALL_BASE=/home/finley/perl5"; export PERL_MM_OPT;
+PATH="$HOME/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="$HOME/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="$HOME/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"$HOME/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=$HOME/perl5"; export PERL_MM_OPT;
 
 function zle-keymap-select () {
-
-case $KEYMAP in
-
-vicmd) echo -ne '\e[1 q';; # block
-
-viins|main) echo -ne '\e[5 q';; # beam
-
-esac
-
+	case $KEYMAP in
+	
+	vicmd) echo -ne '\e[1 q';; # block
+	
+	viins|main) echo -ne '\e[5 q';; # beam
+	
+	esac
 }
 
 zle -N zle-keymap-select
 
 zle-line-init() {
-
-zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
-
-echo -ne "\e[5 q"
-
+	zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+	echo -ne "\e[5 q"
 }
 
 zle -N zle-line-init
