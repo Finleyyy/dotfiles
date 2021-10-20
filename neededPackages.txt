@@ -1,0 +1,8 @@
+xorg
+bspwm
+sxhkd
+dunst
+kitty
+neovim
+rofi
+

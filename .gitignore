@@ -23,4 +23,5 @@
 !.config/rofi/
 !/.xinitrc
 !/.zshrc
+!neededPackages.txt
 !/.gitignore

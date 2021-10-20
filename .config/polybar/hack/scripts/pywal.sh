@@ -20,16 +20,18 @@ change_color() {
 	cat > $RFILE <<- EOF
 	/* colors */
 
-	{
-	  alternate-normal-background:    #00000000;
-	  background:    ${BG}FF;
-	  active-foreground:    ${AC}FF;
-	  selected-active-foreground:    ${AC}26;
-	  foreground:    ${FG}FF;
+	* {
+	  al:    #00000000;
+	  bg:    ${BG}FF;
+	  ac:    ${AC}FF;
+	  se:	 ${AC}26;
+	  fg:    ${FG}FF;
 	}
 	EOF
 	
 	polybar-msg cmd restart
+	wal -R
+	spicetify apply -n &
 }
 
 # Main

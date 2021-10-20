@@ -19,10 +19,15 @@ bspc rule -a Screenkey manage=off
 bspc rule -a Bitwarden state=floating
 
 picom --backend glx &
-sh $HOME/.config/polybar/hack/scripts/pywal.sh $HOME/.config/wallpapers/
-sh $HOME/.config/polybar/hack/launch.sh &
+sh $HOME/.config/polybar/hack/scripts/pywal.sh 
+sh $HOME/.config/polybar/hack/launch.sh
+sh $HOME/scripts/checkBottomBar.sh 
+sh $HOME/scripts/checkBottomBar.sh &
 setxkbmap ch &
-xinput set-prop 12 319 1 &
 xsetroot -cursor_name left_ptr &
 sxhkd &
 sh $HOME/.config/dunst/launchdunst.sh &
+xset s 300 5 &
+xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
+clipmenud &
+mullvad-vpn &
