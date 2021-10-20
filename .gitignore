@@ -22,7 +22,6 @@
 .config/wallpapers/*
 !.config/wallpapers/PLACEHOLDER.md
 !.config/rofi/
-!.config/ranger/
 !.config/rofi/
 !/.xinitrc
 !/.zshrc
