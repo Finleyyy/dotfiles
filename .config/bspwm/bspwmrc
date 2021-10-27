@@ -21,8 +21,6 @@ bspc rule -a Bitwarden state=floating
 picom --backend glx &
 sh $HOME/.config/polybar/hack/scripts/pywal.sh 
 sh $HOME/.config/polybar/hack/launch.sh
-sh $HOME/scripts/checkBottomBar.sh 
-sh $HOME/scripts/checkBottomBar.sh &
 setxkbmap ch &
 xsetroot -cursor_name left_ptr &
 sxhkd &
@@ -31,3 +29,6 @@ xset s 300 5 &
 xss-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock &
 clipmenud &
 mullvad-vpn &
+sh $HOME/scripts/checkBottomBar.sh 
+sh $HOME/scripts/checkBottomBar.sh &
+

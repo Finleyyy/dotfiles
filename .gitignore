@@ -8,9 +8,8 @@
 .config/polybar/*
 !.config/polybar/hack
 !.config/nvim/
-.config/nvim/*
-!.config/nvim/init.vim
-.config/ranger/__pycache__
+!.config/nvim/
+.config/nvim/plugged/
 !.config/dunst/
 .config/spicetify/*
 .config/spicetify/Themes/
