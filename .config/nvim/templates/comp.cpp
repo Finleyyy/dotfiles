@@ -1,15 +1,9 @@
 #include <bits/stdc++.h>
+#include <cstdlib>
 
 using namespace std;
 
 /*******  All Required define Pre-Processors and typedef Constants *******/
-#define SCD(t) scanf("%d",&t)
-#define SCLD(t) scanf("%ld",&t)
-#define SCLLD(t) scanf("%lld",&t)
-#define SCC(t) scanf("%c",&t)
-#define SCS(t) scanf("%s",t)
-#define SCF(t) scanf("%f",&t)
-#define SCLF(t) scanf("%lf",&t)
 #define MEM(a, b) memset(a, (b), sizeof(a))
 #define FOR(i, j, k, in) for (int i=j ; i<k ; i+=in)
 #define RFOR(i, j, k, in) for (int i=j ; i>=k ; i-=in)
@@ -39,7 +33,7 @@ typedef long int int32;
 typedef unsigned long int uint32;
 typedef long long int int64;
 typedef unsigned long long int  uint64;
-/*******  Random number generation (https://codeforces.com/blog/entry/61587) *******/
+/*******  Good (bad for Graders) random number generation (https://codeforces.com/blog/entry/61587) *******/
 mt19937_64 rang(chrono::high_resolution_clock::now().time_since_epoch().count());
 int rng(int lim) {
     uniform_int_distribution<int> uid(0,lim-1);
@@ -47,11 +41,16 @@ int rng(int lim) {
 }
 
 int main() {
-	int n;
-	cin >> n; // First input, mostly as number of lines per case
+	/*** Speeding up input/output ***/
+	// Turn off synchronization between cin/cout and scanf/printf
+	ios_base::sync_with_stdio(false);
+	// Disable automatic flush of cout when reading from cin cin.tie(0);
+	cin.tie(0);
+
+	int n; cin >> n; // First input, probably as number of lines per case
 
 	// code here
-
+	
 
 	return 0;
 }
