@@ -1,12 +1,11 @@
 #include <bits/stdc++.h>
-#include <cstdlib>
 
 using namespace std;
 
 /*******  All Required define Pre-Processors and typedef Constants *******/
 #define MEM(a, b) memset(a, (b), sizeof(a))
-#define FOR(i, j, k, in) for (int i=j ; i<k ; i+=in)
-#define RFOR(i, j, k, in) for (int i=j ; i>=k ; i-=in)
+#define FOR(i, j, k, in) for (long long int i=j ; i<k ; i+=in)
+#define RFOR(i, j, k, in) for (long long int i=j ; i>=k ; i-=in)
 #define REP(i, j) FOR(i, 0, j, 1)
 #define RREP(i, j) RFOR(i, j, 0, 1)
 #define all(cont) cont.begin(), cont.end()
@@ -21,36 +20,28 @@ using namespace std;
 #define MOD 1000000007
 #define read(type) readInt<type>()
 const double pi=acos(-1.0);
-typedef pair<int, int> PII;
-typedef vector<int> VI;
+typedef pair<long long int, long long int> PII;
+typedef vector<long long int> VI;
+typedef vector<PII> VPII;
 typedef vector<string> VS;
 typedef vector<PII> VII;
 typedef vector<VI> VVI;
-typedef map<int,int> MPII;
-typedef set<int> SETI;
-typedef multiset<int> MSETI;
-typedef long int int32;
-typedef unsigned long int uint32;
-typedef long long int int64;
-typedef unsigned long long int  uint64;
-/*******  Good (bad for Graders) random number generation (https://codeforces.com/blog/entry/61587) *******/
-mt19937_64 rang(chrono::high_resolution_clock::now().time_since_epoch().count());
-int rng(int lim) {
-    uniform_int_distribution<int> uid(0,lim-1);
-    return uid(rang);
-}
+typedef tuple<long long int, long long int, long long int> TIII;
+typedef map<long long int,long long int> MPII;
+typedef set<long long int> SETI;
+typedef multiset<long long int> MSETI;
+typedef long long int lint;
 
 int main() {
 	/*** Speeding up input/output ***/
-	// Turn off synchronization between cin/cout and scanf/printf
-	ios_base::sync_with_stdio(false);
-	// Disable automatic flush of cout when reading from cin cin.tie(0);
-	cin.tie(0);
+	ios_base::sync_with_stdio(false); // Desync c++ and c input/output
+	cin.tie(0); // disable automatic input flush (comment this out for interactive tasks)
 
-	int n; cin >> n; // First input, probably as number of lines per case
+	lint n; cin >> n;
+	REP(i, n){
+						
+	}
 
-	// code here
-	
 
 	return 0;
 }
